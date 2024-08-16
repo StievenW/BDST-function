@@ -6,11 +6,7 @@ import tkinter as tk
 from tkinter import scrolledtext
 import struct
 import socket
-
-# RCON Configuration
-HOST = '127.0.0.1'
-PORT = 25575
-PASSWORD = 'ayambakar'
+import config  # Import RCON configuration
 
 # RCON Packet Types
 RCON_PACKET_TYPE = {
@@ -47,10 +43,10 @@ def recv_packet(client_socket):
 
 def connect_rcon():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client_socket.connect((HOST, PORT))
+    client_socket.connect((config.HOST, config.PORT))
 
     # Authenticate
-    send_packet(client_socket, RCON_PACKET_TYPE['SERVERDATA_AUTH'], 1, PASSWORD)
+    send_packet(client_socket, RCON_PACKET_TYPE['SERVERDATA_AUTH'], 1, config.PASSWORD)
     _, packet_type, _ = recv_packet(client_socket)
     if packet_type != RCON_PACKET_TYPE['SERVERDATA_AUTH_RESPONSE']:
         raise Exception("RCON Authentication failed")

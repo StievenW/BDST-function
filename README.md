@@ -38,7 +38,7 @@ BDST-function is a Python-based tool designed to help you manage and automate ta
 
 1. **Run the tool**:
     ```bash
-    python bdst_function.py
+    python function.py
     ```
 
 2. **GUI Overview**:
