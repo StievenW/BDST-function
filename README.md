@@ -1,6 +1,6 @@
-# BDST (Bedrock Dedicated Server Tools)
+# BDST-function (Bedrock Dedicated Server Tools)
 
-BDST is a Python-based tool designed to help you manage and automate tasks on your Minecraft Bedrock Dedicated Server using RCON. The tool allows you to monitor a folder for `.mcfunction` files, execute the commands within those files on your server, and adjust the command delay between executions using a simple graphical user interface (GUI).
+BDST-function is a Python-based tool designed to help you manage and automate tasks on your Minecraft Bedrock Dedicated Server using RCON. The tool allows you to monitor a folder for `.mcfunction` files, execute the commands within those files on your server, and adjust the command delay between executions using a simple graphical user interface (GUI).
 
 ## Features
 
@@ -19,12 +19,12 @@ BDST is a Python-based tool designed to help you manage and automate tasks on yo
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/StievenW/BDST.git
-    cd BDST
+    git clone https://github.com/StievenW/BDST-function.git
+    cd BDST-function
     ```
 
 2. **Edit the RCON configuration**:
-    - Open the `bdst.py` file and modify the following variables according to your server's configuration:
+    - Open the `bdst_function.py` file and modify the following variables according to your server's configuration:
         ```python
         HOST = '127.0.0.1'  # Change to your server's IP
         PORT = 25575        # Change to your server's RCON port
@@ -38,7 +38,7 @@ BDST is a Python-based tool designed to help you manage and automate tasks on yo
 
 1. **Run the tool**:
     ```bash
-    python function.py
+    python bdst_function.py
     ```
 
 2. **GUI Overview**:
