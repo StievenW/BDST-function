@@ -24,7 +24,7 @@ BDST-function is a Python-based tool designed to help you manage and automate ta
     ```
 
 2. **Edit the RCON configuration**:
-    - Open the `bdst_function.py` file and modify the following variables according to your server's configuration:
+    - Open the `config.py` file and modify the following variables according to your server's configuration:
         ```python
         HOST = '127.0.0.1'  # Change to your server's IP
         PORT = 25575        # Change to your server's RCON port
