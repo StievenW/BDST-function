@@ -38,7 +38,7 @@ BDST is a Python-based tool designed to help you manage and automate tasks on yo
 
 1. **Run the tool**:
     ```bash
-    python functions.py
+    python function.py
     ```
 
 2. **GUI Overview**:
