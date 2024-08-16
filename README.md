@@ -9,12 +9,6 @@ BDST is a Python-based tool designed to help you manage and automate tasks on yo
 - **Real-time Log**: View command execution logs directly in the GUI to monitor what commands are being sent to the server.
 - **Simple Setup**: Easy-to-use interface with start and stop controls for managing the execution process.
 
-## Requirements
-
-- Python 3.x
-- `tkinter` library (usually included with Python)
-- A running Minecraft Bedrock Dedicated Server with RCON enabled
-
 ## Installation
 
 1. **Clone the repository**:
@@ -23,12 +17,7 @@ BDST is a Python-based tool designed to help you manage and automate tasks on yo
     cd BDST
     ```
 
-2. **Install required dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Edit the RCON configuration**:
+2. **Edit the RCON configuration**:
     - Open the `bdst.py` file and modify the following variables according to your server's configuration:
         ```python
         HOST = '127.0.0.1'  # Change to your server's IP
@@ -36,14 +25,14 @@ BDST is a Python-based tool designed to help you manage and automate tasks on yo
         PASSWORD = 'yourpassword'  # Change to your server's RCON password
         ```
 
-4. **Set up the functions folder**:
+3. **Set up the functions folder**:
     - Make sure you have a folder named `functions` (or change the path in the code) where your `.mcfunction` files are stored.
 
 ## Usage
 
 1. **Run the tool**:
     ```bash
-    python functions.py
+    python function.py
     ```
 
 2. **GUI Overview**:
